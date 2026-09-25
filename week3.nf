@@ -129,6 +129,7 @@ workflow {
     quast_out = quast_ch
     quast_unpolished_out = quast_unpolished_ch
     busco_plot_out = busco_plot_ch
+    busco_out = busco_ch
 
 }
 
@@ -146,5 +147,8 @@ output {
         path {"busco/"}
     }
 
+    busco_out {
+        path ("busco_results/")
+    }
 
 }
